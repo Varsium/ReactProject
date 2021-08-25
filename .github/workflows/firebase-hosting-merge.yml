@@ -11,10 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACTDEMOLO }}'
           channelId: live
           projectId: reactdemolo
+          firebaseToken: 1//09ow29rj2r7jQCgYIARAAGAkSNwF-L9IroO22brD-1xPkehymua_Fc0qdSNOjVj0evnuELYkUE8ef4rq5W29dQ5Bb07Cy2DnRxno
