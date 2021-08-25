@@ -5,7 +5,7 @@ class Error extends React.Component {
 
 render(){
 return(
-<span> oops something went wrong! </span>
+<span> oops something went wrong! please contact us!</span>
 
 )
 }}
